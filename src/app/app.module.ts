@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { KbBasicClockComponent } from './kb-basic-clock/kb-basic-clock.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    KbBasicClockComponent
   ],
   imports: [
     BrowserModule,
