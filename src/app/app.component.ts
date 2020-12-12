@@ -19,8 +19,8 @@ export class AppComponent {
       secHandColor: '',
     },
     handStyle: '',
-    frameStyle: '',
     frameShape: '',
+    dark:null
   };
   title = 'khadija-clock';
 }
