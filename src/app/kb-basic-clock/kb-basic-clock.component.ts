@@ -13,8 +13,26 @@ import { TimeDate } from './TimeDate';
 export class KbBasicClockComponent implements OnInit, OnDestroy, AfterViewInit {
 
   @ViewChild('canvas') canvasRef: ElementRef;
-  @Input() public width = 400;
-  @Input() public height = 400;
+  @Input() public width;
+  @Input() public height;
+
+  clockConfig = {
+    numbersType: '',
+    width: null,
+    height: null,
+    faceColor: '',
+    backgroundColor: '',
+    frameColor: '',
+    handColors: {
+      hourHandColor: '',
+      minHandColor: '',
+      secHandColor: '',
+    },
+    handStyle: '',
+    frameStyle: '',
+    frameShape: '',
+  }; 
+
   canvasContext: CanvasRenderingContext2D;
   subscription: Subscription;
 

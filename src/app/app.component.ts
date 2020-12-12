@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   clockConfig = {
     numbersType: '',
+    width: null,
+    height: null,
     faceColor: '',
     backgroundColor: '',
     frameColor: '',
